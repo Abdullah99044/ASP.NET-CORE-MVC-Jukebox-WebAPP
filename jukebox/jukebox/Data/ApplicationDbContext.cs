@@ -12,5 +12,9 @@ namespace jukebox.Data
         }
 
         public DbSet<Genres> Genres { get; set; }
+
+        public DbSet<Songs> Songs { get; set; }
+
+         
     }
 }
