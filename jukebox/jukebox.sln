@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jukebox", "jukebox\jukebox.csproj", "{0ECA7CE8-57A7-4E9C-8B7D-4608247251DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ECA7CE8-57A7-4E9C-8B7D-4608247251DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECA7CE8-57A7-4E9C-8B7D-4608247251DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECA7CE8-57A7-4E9C-8B7D-4608247251DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECA7CE8-57A7-4E9C-8B7D-4608247251DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57716386-1A26-4DA1-A4E7-09362302BD04}
+	EndGlobalSection
+EndGlobal
