@@ -1,0 +1,19 @@
+﻿
+
+
+@model IEnumerable<Songs>
+
+
+@{
+    ViewData["Title"] = "songs";
+}
+
+ 
+
+@foreach(var obj in Model)
+{
+    <a>@obj.Name</a>
+    <br />
+}
+
+ 
