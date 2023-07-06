@@ -258,3 +258,12 @@ C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\obj\Debug\net7.0
 C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\obj\Debug\net7.0\jukebox.pdb
 C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\obj\Debug\net7.0\jukebox.genruntimeconfig.cache
 C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\obj\Debug\net7.0\ref\jukebox.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\obj\Debug\net7.0\jukebox.MvcApplicationPartsAssemblyInfo.cs
