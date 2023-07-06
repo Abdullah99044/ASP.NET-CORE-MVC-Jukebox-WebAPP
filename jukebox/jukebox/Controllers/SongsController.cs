@@ -34,5 +34,14 @@ namespace jukebox.Controllers
 
             return View(songsGenre);
         }
+
+
+
+        //Direct song to add to plylist page
+
+        public IActionResult AddToPlayList(int id)
+        {
+            return View();
+        }
     }
 }
