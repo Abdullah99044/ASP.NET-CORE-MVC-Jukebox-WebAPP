@@ -27,6 +27,7 @@ namespace jukebox.Models
         public string UserId { get; set; } // foreign key property
         public ApplicationUser ApplicationUser { get; set; }
 
+        public ICollection<Saved_Songs> Saved_Songs { get; set; }
 
 
     }

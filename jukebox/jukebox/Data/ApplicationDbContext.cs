@@ -21,7 +21,23 @@ namespace jukebox.Data
             modelBuilder.Entity<PlayLists>()
                 .HasOne(p => p.ApplicationUser)
                 .WithMany(c => c.PlayLists)
-                .HasForeignKey(p => p.UserId);
+                .HasForeignKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Saved_Songs>()
+                .HasOne(p => p.ApplicationUser)
+                .WithMany(c => c.Saved_Songs)
+                .HasForeignKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+
+
+            modelBuilder.Entity<Saved_Songs>()
+                .HasOne(p => p.PlayLists)
+                .WithMany(c => c.Saved_Songs)
+                .HasForeignKey(p => p.PlaylistId)
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
 
         public DbSet<Genres> Genres { get; set; }
