@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using jukebox.Data;
 
@@ -11,9 +12,11 @@ using jukebox.Data;
 namespace jukebox.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230709012041_NewDatabase")]
+    partial class NewDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,10 +89,6 @@ namespace jukebox.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -141,10 +140,6 @@ namespace jukebox.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
-
-                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -250,30 +245,6 @@ namespace jukebox.Migrations
                     b.ToTable("Genres");
                 });
 
-            modelBuilder.Entity("jukebox.Models.PlayLists", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("VARCHAR");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("PlayLists");
-                });
-
             modelBuilder.Entity("jukebox.Models.Songs", b =>
                 {
                     b.Property<int>("Id")
@@ -303,13 +274,6 @@ namespace jukebox.Migrations
                     b.HasIndex("GenresId");
 
                     b.ToTable("Songs");
-                });
-
-            modelBuilder.Entity("jukebox.Models.ApplicationUser", b =>
-                {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
-
-                    b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -363,17 +327,6 @@ namespace jukebox.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("jukebox.Models.PlayLists", b =>
-                {
-                    b.HasOne("jukebox.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany("PlayLists")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ApplicationUser");
-                });
-
             modelBuilder.Entity("jukebox.Models.Songs", b =>
                 {
                     b.HasOne("jukebox.Models.Genres", "Genres")
@@ -383,11 +336,6 @@ namespace jukebox.Migrations
                         .IsRequired();
 
                     b.Navigation("Genres");
-                });
-
-            modelBuilder.Entity("jukebox.Models.ApplicationUser", b =>
-                {
-                    b.Navigation("PlayLists");
                 });
 #pragma warning restore 612, 618
         }

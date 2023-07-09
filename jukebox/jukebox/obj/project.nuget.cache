@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DJ3EzBe10caRhLz/QxabdmnYodNAgsxIMKsYB2c7EljUzq6vKiBYbQjqV+cj35r1yJrVXVEcOOZSOAcGDbUtjg==",
+  "dgSpecHash": "PcQRO+S3nQh/w1+Zd3tQ6ZLx+j+4+Ux79R5RmjaUNXxMEZ9ydPfNEu+Z6yLgalB1d0M9WYOnXeKwhH7P2EDzhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\jukebox.csproj",
   "expectedPackageFiles": [
@@ -160,6 +160,7 @@
     "C:\\Users\\kathi\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\kathi\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\kathi\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\kathi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\kathi\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
     "C:\\Users\\kathi\\.nuget\\packages\\system.composition.attributedmodel\\6.0.0\\system.composition.attributedmodel.6.0.0.nupkg.sha512",
     "C:\\Users\\kathi\\.nuget\\packages\\system.composition.convention\\6.0.0\\system.composition.convention.6.0.0.nupkg.sha512",

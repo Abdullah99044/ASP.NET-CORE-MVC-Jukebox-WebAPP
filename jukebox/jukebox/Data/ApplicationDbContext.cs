@@ -12,7 +12,21 @@ namespace jukebox.Data
             
         }
 
+       
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<PlayLists>()
+                .HasOne(p => p.ApplicationUser)
+                .WithMany(c => c.PlayLists)
+                .HasForeignKey(p => p.UserId);
+        }
+
         public DbSet<Genres> Genres { get; set; }
+
+        public DbSet<PlayLists> PlayLists { get; set; }
 
         public DbSet<Songs> Songs { get; set; }
 

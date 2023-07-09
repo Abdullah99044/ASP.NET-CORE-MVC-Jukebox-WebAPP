@@ -2,6 +2,7 @@ using jukebox.Data;
 using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using jukebox.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
         builder.Configuration.GetConnectionString("DefultConnection")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
+ 
+
 builder.Services.AddRazorPages();   
 
 var app = builder.Build();

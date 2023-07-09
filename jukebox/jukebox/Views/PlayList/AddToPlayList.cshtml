@@ -1,0 +1,23 @@
+﻿@using System.Security.Claims;
+@model PlayLists ;
+
+
+
+@{
+    ViewData["Title"] = "AddToPlayList";
+
+    var id = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+}
+
+<h1>AddToPlayList</h1>
+
+<form method="post" >
+
+    <input type="hidden" asp-for="UserId" value="@id" />
+
+    <input type="text" asp-for="Name" placeholder="Your playlist name" />
+
+    <input type="submit" value="Create" />
+
+
+</form>

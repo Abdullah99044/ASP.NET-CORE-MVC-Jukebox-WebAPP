@@ -7,6 +7,16 @@ namespace jukebox.Controllers
 {
     public class PlayListController : Controller
     {
+
+
+
+        private readonly ApplicationDbContext _db;
+
+        public PlayListController(ApplicationDbContext db)
+        {
+            _db = db;
+        }
+
         public IActionResult MyPlayList()
         {
 
@@ -44,6 +54,20 @@ namespace jukebox.Controllers
         {
 
             return View();
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddToPlayList(PlayLists obj)
+        {
+
+
+            _db.PlayLists.Add(obj);
+
+            _db.SaveChanges();
+
+            return RedirectToAction("MyPlayList");
 
         }
     }
