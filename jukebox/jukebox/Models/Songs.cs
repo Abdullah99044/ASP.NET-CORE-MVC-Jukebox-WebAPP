@@ -26,7 +26,8 @@ namespace jukebox.Models
         [Required]
         public TimeSpan Length { get; set; }
 
-        [Required]
+ 
+        public int GenresId { get; set; }
         public Genres Genres { get; set; } = null!;
 
 

@@ -64,15 +64,97 @@ namespace jukebox.Data
                 if (!db.Songs.Any())
                 {
 
-                    
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                         
+
+                    db.Songs.AddRange(new List<Songs>()
+                    {
+
+
+                        // Lofi songs 
+
+                        new Songs()
+                        {
+
+                            Name = "Studing-lofi",
+
+                            Length = TimeSpan.FromMinutes(12),
+
+                            Artist = "Lofi art" ,
+
+                            GenresId = 1
+                        },
+
+                        new Songs()
+                        {
+
+                            Name = "Gaming-lofi",
+
+                            Length = TimeSpan.FromMinutes(12),
+
+                            Artist = "Lofi art" ,
+
+                            GenresId = 1
+                        },
+
+                        new Songs()
+                        {
+
+                            Name = "Working-lofi",
+
+                            Length = TimeSpan.FromMinutes(12),
+
+                            Artist = "Lofi art" ,
+
+                            GenresId = 1
+
+                        },
+
+                        //Rap songs 
+
+                         new Songs()
+                        {
+
+                            Name = "Lose Yoirself",
+
+                            Length = TimeSpan.FromMinutes(4),
+
+                            Artist = "Eminem" ,
+
+                            GenresId = 2
+                        },
+
+                        new Songs()
+                        {
+
+                            Name = "Till I Collapse ",
+
+                            Length = TimeSpan.FromMinutes(4) + TimeSpan.FromSeconds(30) ,
+
+                            Artist = "Eminem" ,
+
+                            GenresId = 2
+                        },
+
+                        new Songs()
+                        {
+
+                            Name = "In da club",
+
+                            Length = TimeSpan.FromMinutes(5),
+
+                            Artist = "50 cent" ,
+
+                            GenresId = 2
+
+                        }
+
+                    });
+
+
+
+                    db.SaveChanges();
+
+
+
 
                 }
 

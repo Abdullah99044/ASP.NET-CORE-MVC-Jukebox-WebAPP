@@ -38,6 +38,12 @@ namespace jukebox.Data
                 .HasForeignKey(p => p.PlaylistId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Songs>()
+                .HasOne(p => p.Genres)
+                .WithMany(c => c.Songs)
+                .HasForeignKey(p => p.GenresId)
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
 
         public DbSet<Genres> Genres { get; set; }

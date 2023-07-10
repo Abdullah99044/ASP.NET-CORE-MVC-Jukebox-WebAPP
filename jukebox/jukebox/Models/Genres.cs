@@ -15,5 +15,8 @@ namespace jukebox.Models
         [StringLength(50)]
         public string Name { get; set; } = null! ;
 
+        public ICollection<Songs> Songs { get; set; }
+
+
     }
 }
