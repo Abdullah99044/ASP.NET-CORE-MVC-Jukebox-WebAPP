@@ -46,6 +46,8 @@ namespace jukebox.Data
 
         public DbSet<Songs> Songs { get; set; }
 
-         
+        public DbSet<Saved_Songs> Saved_Songs { get; set;}
+
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
     }
 }
