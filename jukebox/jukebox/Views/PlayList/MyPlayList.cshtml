@@ -1,4 +1,6 @@
-﻿@model IEnumerable<PlayLists>;
+﻿@using static jukebox.Controllers.PlayListController;
+
+@model IEnumerable<PlayLists>;
 
 
 @{
@@ -10,7 +12,27 @@
 <a asp-controller="PlayList" asp-action="AddToPlayList"> Make play list</a>
 
 
-@foreach(var obj in Model){
+@foreach(var obj in Model) {
 
-    <h2>@obj.Name</h2>
+ 
+
+    <div>
+
+        <a> @obj.Name </a>
+
+        <div>
+            <form method="Post" asp-controller="PlayList" asp-action="DeletPlaylist" asp-route-id="@obj.Id">
+
+              
+                 
+                <input type="submit" value="Delete">
+
+            </form>
+
+            <a asp-controller="PlayList" asp-action="EditPlayListView" asp-route-id="@obj.Id">  Edit </a>
+        </div>
+        
+        <br >
+        
+    </div>
 }

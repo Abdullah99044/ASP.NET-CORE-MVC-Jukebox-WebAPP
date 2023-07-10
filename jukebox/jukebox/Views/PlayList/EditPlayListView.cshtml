@@ -1,0 +1,20 @@
+﻿
+@model PlayLists;
+
+@{
+    ViewData["Title"] = "EditPlayList";
+}
+
+<h1>EditPlayList</h1>
+
+
+<form method="post" asp-controller="PlayList" asp-action="EditPlayList">
+
+    <input type="text" asp-for="Name" placeholder="Name" />
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="UserId" />
+    <input type="submit" value="Edit" />
+
+
+</form>
+
