@@ -1,4 +1,6 @@
-﻿
+﻿@model IEnumerable<PlayLists>;
+
+
 @{
     ViewData["Title"] = "MyPlayList";
 }
@@ -6,3 +8,9 @@
 <h1>MyPlayList</h1>
 
 <a asp-controller="PlayList" asp-action="AddToPlayList"> Make play list</a>
+
+
+@foreach(var obj in Model){
+
+    <h2>@obj.Name</h2>
+}

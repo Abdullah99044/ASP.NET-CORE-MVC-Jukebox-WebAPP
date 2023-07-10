@@ -1,4 +1,7 @@
 ﻿using jukebox.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace jukebox.Data
 {
@@ -148,9 +151,6 @@ namespace jukebox.Data
                         }
 
                     });
-
-
-
                     db.SaveChanges();
 
 
@@ -158,19 +158,33 @@ namespace jukebox.Data
 
                 }
 
-
-                //Users
-
-                if (!db.ApplicationUser.Any())
-                {
-
-                }
-
+ 
 
                 //Playlists
 
                 if (!db.PlayLists.Any())
                 {
+
+                    db.PlayLists.AddRange(new List<PlayLists>()
+                    {
+                        new PlayLists()
+                        {
+                            Name = "Rap playlist",
+                            UserId = "fa970c7f-7425-4bba-96bc-5502113f858b" 
+
+                        },
+
+                        new PlayLists()
+                        {
+
+                            Name = "Lofi playlist",
+                            UserId = "fa970c7f-7425-4bba-96bc-5502113f858b"
+
+                        }
+
+                    });
+
+                    db.SaveChanges();
 
                 }
 
@@ -180,7 +194,13 @@ namespace jukebox.Data
                 {
 
                 }
+ 
             }
+
         }
+
+           
     }
+
+    
 }

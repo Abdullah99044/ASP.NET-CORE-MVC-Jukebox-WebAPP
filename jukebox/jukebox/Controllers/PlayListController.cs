@@ -2,6 +2,7 @@
 using jukebox.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace jukebox.Controllers
 {
@@ -17,17 +18,24 @@ namespace jukebox.Controllers
             _db = db;
         }
 
+        
         public IActionResult MyPlayList()
         {
 
             if (!User.Identity.IsAuthenticated)
             {
                 return LocalRedirect("/Identity/Account/Login");
-
             }
 
-            return View();
+            var Id = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            IEnumerable<PlayLists> objPlaylists = _db.PlayLists.Where(s => s.UserId == Id).ToList();
+
             
+
+
+            return View(objPlaylists);
+
         }
 
 
@@ -50,20 +58,41 @@ namespace jukebox.Controllers
 
         //Post add a song to a play list
 
+
+        public class twoModels
+        {
+            public PlayLists PlayLists { get; set; }
+            public string userid { get; set; }
+        }
+
+
+        [HttpGet]
         public IActionResult AddToPlayList()
         {
+            var id = User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
-            return View();
+
+            var models = new twoModels
+            {
+                PlayLists = new PlayLists() ,
+
+                userid = id
+
+
+            };
+                
+                
+            return View(models);
 
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult AddToPlayList(PlayLists obj)
+        public IActionResult AddToPlayList(twoModels models )
         {
 
 
-            _db.PlayLists.Add(obj);
+            _db.PlayLists.Add(models.PlayLists);
 
             _db.SaveChanges();
 
