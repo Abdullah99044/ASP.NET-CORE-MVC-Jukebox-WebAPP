@@ -1,0 +1,42 @@
+﻿@using static jukebox.Controllers.SongsController;
+
+
+
+@model AddToPlayListModels ;
+
+@{
+    ViewData["Title"] = "AddToPlayListView";
+
+    var id = Model.Id;
+
+}
+
+<h1>@id</h1>
+
+
+
+<form asp-controller="Songs" asp-action="AddToPlayList">
+
+ 
+    <select asp-for="Saved.PlaylistId">
+
+        @foreach (var obj in Model.playLists)
+        {
+
+            <option value="@obj.Id"> @obj.Name</option>
+
+        }
+
+
+    </select>
+    
+
+    <input type="hidden" asp-for="Saved.SongsId" value="@Model.Id" />
+
+ 
+
+   
+    <input type="submit" value="Add" />
+
+</form>
+

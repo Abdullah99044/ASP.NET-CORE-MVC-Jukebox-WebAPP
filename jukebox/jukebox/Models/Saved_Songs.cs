@@ -8,16 +8,15 @@ namespace jukebox.Models
 
         public int Id { get; set; }
 
-
-
+        
         public int PlaylistId { get; set; }
 
         public PlayLists PlayLists { get; set; }
 
 
 
-        public string UserId { get; set; }
+        public int SongsId { get; set; }
 
-        public ApplicationUser ApplicationUser { get; set; }
+        public Songs Songs { get; set; }
     }
 }

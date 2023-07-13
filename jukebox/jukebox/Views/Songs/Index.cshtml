@@ -12,7 +12,8 @@
 
 @foreach(var obj in Model)
 {
-    <a>@obj.Name</a>
+    <a asp-controller="SongsDetails" asp-action="index" asp-route-id="@obj.Id" >@obj.Name</a>
+    <a asp-controller="Songs" asp-action="AddToPlayListView" asp-route-id="@obj.Id">Add to your playlist</a>
     <br />
 }
 

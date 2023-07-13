@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Songs>;
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Song details</h1>
+
+@foreach(var obj in Model)
+{
+    <h2> Name   : @obj.Name   </h2>
+    <h2> Length : @obj.Length </h2>
+    <h2> Artist : @obj.Artist </h2>
+    <h2> Genre  : @obj.Genres.Name </h2>
+}
+

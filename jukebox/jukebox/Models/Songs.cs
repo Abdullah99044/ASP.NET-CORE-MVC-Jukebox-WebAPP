@@ -30,6 +30,7 @@ namespace jukebox.Models
         public int GenresId { get; set; }
         public Genres Genres { get; set; } = null!;
 
+        public ICollection<Saved_Songs> Saved_Songs { get; set; }
 
 
 

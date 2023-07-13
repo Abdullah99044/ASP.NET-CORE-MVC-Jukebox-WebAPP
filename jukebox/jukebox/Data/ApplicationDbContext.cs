@@ -25,9 +25,9 @@ namespace jukebox.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Saved_Songs>()
-                .HasOne(p => p.ApplicationUser)
+                .HasOne(p => p.Songs)
                 .WithMany(c => c.Saved_Songs)
-                .HasForeignKey(p => p.UserId)
+                .HasForeignKey(p => p.SongsId)
                 .OnDelete(DeleteBehavior.NoAction);
 
 

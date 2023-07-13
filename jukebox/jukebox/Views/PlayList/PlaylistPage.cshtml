@@ -1,0 +1,52 @@
+﻿@using static jukebox.Controllers.PlayListController;
+@model models_for_playlistPage ;
+
+
+@{
+    ViewData["Title"] = "PlaylistPage";
+
+    int Id = Model.id;
+
+    string name = Model.name;
+
+    TimeSpan tottalTime = TimeSpan.Zero;
+}
+
+
+
+ 
+
+
+ 
+
+@foreach(var obj in Model.Saved)
+{
+    @obj.Songs.Name
+
+    {
+
+        
+
+        tottalTime += obj.Songs.Length;
+    }
+
+
+
+
+
+
+    <form method="post" asp-controller="PlayList" asp-action="DeleteFromPlaylist" asp-route-id="@obj.Id" asp-route-name="@name" asp-route-playlistid="@Id">
+
+ 
+
+        <input type="submit" value="Delete">
+
+    </form>
+
+    
+    <br />
+
+}
+
+
+<h2> Tottal play list length =  @tottalTime </h2>

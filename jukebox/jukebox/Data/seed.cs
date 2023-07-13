@@ -193,6 +193,36 @@ namespace jukebox.Data
                 if (!db.Saved_Songs.Any())
                 {
 
+                    db.Saved_Songs.AddRange(new List<Saved_Songs>()
+                    {
+                        new Saved_Songs()
+                        {
+                            SongsId = 1 ,
+                            PlaylistId = 7  
+
+                        },
+
+                        new Saved_Songs()
+                        {
+
+                            SongsId = 2 ,
+                            PlaylistId = 7
+
+                        },
+
+                        new Saved_Songs()
+                        {
+                             SongsId = 3 ,
+                            PlaylistId = 7
+
+                        },
+
+                        
+
+                    });
+
+                    db.SaveChanges();
+
                 }
  
             }

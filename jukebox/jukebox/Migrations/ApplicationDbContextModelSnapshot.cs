@@ -285,15 +285,14 @@ namespace jukebox.Migrations
                     b.Property<int>("PlaylistId")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("SongsId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("PlaylistId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("SongsId");
 
                     b.ToTable("Saved_Songs");
                 });
@@ -406,15 +405,15 @@ namespace jukebox.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("jukebox.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("jukebox.Models.Songs", "Songs")
                         .WithMany("Saved_Songs")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("SongsId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
-
                     b.Navigation("PlayLists");
+
+                    b.Navigation("Songs");
                 });
 
             modelBuilder.Entity("jukebox.Models.Songs", b =>
@@ -438,11 +437,14 @@ namespace jukebox.Migrations
                     b.Navigation("Saved_Songs");
                 });
 
+            modelBuilder.Entity("jukebox.Models.Songs", b =>
+                {
+                    b.Navigation("Saved_Songs");
+                });
+
             modelBuilder.Entity("jukebox.Models.ApplicationUser", b =>
                 {
                     b.Navigation("PlayLists");
-
-                    b.Navigation("Saved_Songs");
                 });
 #pragma warning restore 612, 618
         }

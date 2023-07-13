@@ -18,7 +18,7 @@
 
     <div>
 
-        <a> @obj.Name </a>
+        <a asp-controller="PlayList" asp-action="PlaylistPage" asp-route-id="@obj.Id" asp-route-name="@obj.Name"> @obj.Name </a>
 
         <div>
             <form method="Post" asp-controller="PlayList" asp-action="DeletPlaylist" asp-route-id="@obj.Id">

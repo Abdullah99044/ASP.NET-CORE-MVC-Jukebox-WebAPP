@@ -1,0 +1,19 @@
+﻿
+
+
+@model IEnumerable<Genres>
+
+
+
+@{
+    ViewData["Title"] = "Genre Page";
+}
+
+ 
+
+@foreach (var obj in Model){
+
+    <a asp-controller="Songs" asp-action="Index" asp-route-id="@obj.Id">  @obj.Name </a>
+    <br />
+
+}
