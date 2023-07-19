@@ -10,10 +10,23 @@
 }
 
  
+<div class="Genre-Continer-Grid">
 
-@foreach (var obj in Model){
 
-    <a asp-controller="Songs" asp-action="Index" asp-route-id="@obj.Id">  @obj.Name </a>
-    <br />
+    
 
-}
+        @foreach (var obj in Model){
+
+            <div class="Genre-Container">
+                <div class="Gener-Content">
+                <a asp-controller="Songs" asp-action="Index" asp-route-id="@obj.Id"> <i class="bi bi-music-note-beamed"></i>  @obj.Name </a>
+                </div>
+            </div>
+               
+           
+
+        }
+
+   
+
+</div>

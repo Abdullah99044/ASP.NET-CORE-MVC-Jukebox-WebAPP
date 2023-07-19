@@ -6,42 +6,74 @@
     <title>@ViewData["Title"] - jukebox</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/nav.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Gnere.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/jukebox.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="content">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Genre" asp-action="Index">jukebox</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Genre" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Genre" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                 </div>
-            </div>
-        </nav>
+         <nav>
+
+            <div class="leftSection">
+
+
+                <div class="Title">
+
+                    <a asp-controller="Genre" asp-action="Index">  <i class="bi bi-music-note"></i> Jukebox </a>
+                    
+
+                </div>
+
+             </div>
+
+             <div class="RigthSection">
+
+           
+                        
+                
+
+
+                <div class="DriopContent">
+
+                    <button class="dropbtn">
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                    <div class="List">
+
+                        <partial name="_LoginPartial">
+
+                    </div>
+                   
+
+
+                </div>
+
+             </div>
+
+         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="Main">
+        <main role="main"  >
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer >
+        <div  >
             &copy; 2023 - jukebox - <a asp-area="" asp-controller="Genre" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

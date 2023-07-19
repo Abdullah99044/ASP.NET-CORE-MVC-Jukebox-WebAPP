@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\jukebox.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\Gnere.css",
+      "PackagePath": "staticwebassets\\css\\Gnere.css"
+    },
+    {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\general.css",
+      "PackagePath": "staticwebassets\\css\\general.css"
+    },
+    {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\nav.css",
+      "PackagePath": "staticwebassets\\css\\nav.css"
+    },
+    {
       "Id": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

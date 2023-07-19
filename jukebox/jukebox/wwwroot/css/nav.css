@@ -1,0 +1,264 @@
+﻿
+
+
+
+nav {
+
+    background-color: rgb(154, 44, 44);
+    color: white;
+    display: flex;
+
+    height: 60px;
+
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+
+    
+    
+
+}
+
+.leftSection {
+
+    width: 200px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.Title{
+
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+.Title a {
+    text-decoration: none;
+    color: white;
+
+    font-style: Lumanosimo  ;
+
+}
+
+.RigthSection {
+     
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+
+   
+}
+
+/* This is the dorp down button , we hide it right now until the user screen becomes small */
+.dropbtn{
+    display: none;
+}
+
+
+.DriopContent{
+
+    display: flex;
+ 
+    
+}
+
+.List{
+
+    flex: 1;
+    display: flex;
+
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.Register{
+   
+    margin-right: 60px;
+}
+
+.Login a , .Register a  , .account a ,  .MyPlayList a{
+    text-decoration: none;
+    
+    color: white;
+    
+}
+
+
+ 
+.Login , .Register , .account , .MyPlayList , .Logout {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 120px ;
+    margin-left: 10px;
+
+    height: 40px;
+    border-radius: 20px;
+
+    padding-bottom: 2px;
+    transition: background-color , width   0.25s  ;
+   
+     
+     
+    
+  
+
+    
+}
+
+ 
+
+.Logout{
+    margin-left: 20px;
+    margin-right: 10px;
+  
+     
+     
+}
+
+.Logout button{
+
+    
+    height: 41px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(235, 15, 15);
+    transition: background-color , width 0.25s ease-out;
+    
+
+
+}
+
+@media (min-width: 801px){
+
+    .Logout:hover  button {
+
+        background-color: rgb(255, 56, 56);
+        width: 130px;
+        
+        
+    }
+
+    .Logout:hover {
+        width: 130px;
+    }
+
+    
+
+   
+
+
+    .Login:hover , .Register:hover ,  .account:hover , .MyPlayList:hover  {
+        background-color: rgb(125, 37, 37);
+        width: 130px;
+        
+    }
+}
+
+
+/* Mobile size */
+
+@media (max-width: 800px){
+
+
+    .DriopContent{
+        position: relative;
+    }
+
+
+    /* The style of the drop down list when the user didnot hoverd on the button */
+
+    .List{
+         
+        display: none;
+        background-color: rgb(125, 37, 37);
+        position: absolute;
+      
+        flex-direction: column ;
+
+        justify-content: center;
+        align-items: center;
+
+        right: 20px;
+        top: 55px;
+        opacity: 100;      
+
+        
+       
+    }
+
+    .Login , .Register , .account , .Logout , .MyPlayList{
+        height: 60px;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 0px;
+        transition:  background-color 0.25s ease-out;
+    }
+
+    .Logout{
+
+        width: 100%;
+
+    }
+    .Logout button {
+        background-color: rgb(125, 37, 37);
+        transition:  background-color 0.25s ease-out;
+       
+    }
+
+    .RigthSection{
+        position: relative;
+    }
+
+
+    /* Showing the button of the dropdown menu */
+
+    .dropbtn{
+        
+        background-color: rgb(154, 44, 44) ;
+        display: block;
+        position: absolute;
+
+        height: 100%;
+
+        right: 20px;
+       
+
+        width: 120px;
+
+        font-size: 40px;
+
+       
+        border-width: 0;
+
+        transition:  background-color 0.25s;
+        
+    }
+
+
+    /* Showing the drop down menu when the user hover on it  */
+    
+    .DriopContent:hover  .dropbtn    {
+        background-color: rgb(125, 37, 37);
+    }
+
+    .DriopContent:hover  .List{
+        display: block;
+    }
+
+    .Login:hover , .Register:hover , .account:hover , .MyPlayList:hover , .Logout:hover , .Logout:hover button {
+        background-color: rgb(162, 49, 49);
+        
+    }
+ 
+     
+}

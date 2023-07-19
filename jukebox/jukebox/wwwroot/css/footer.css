@@ -1,0 +1,19 @@
+
+
+
+
+footer {
+
+    background-color: rgb(154, 44, 44);
+    color: white;
+     
+
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    margin: 0px;
+}
