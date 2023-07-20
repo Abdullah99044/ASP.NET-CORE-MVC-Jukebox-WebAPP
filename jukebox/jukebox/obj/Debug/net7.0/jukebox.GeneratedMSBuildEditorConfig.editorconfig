@@ -9,105 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = jukebox
 build_property.RootNamespace = jukebox
-build_property.ProjectDir = C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox\
+build_property.ProjectDir = C:\Users\kathi\Desktop\learning\New JukeBox\jukebox\jukebox\jukebox\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kathi\Desktop\learning\jukebox\jukebox\jukebox\jukebox
+build_property.MSBuildProjectDirectory = C:\Users\kathi\Desktop\learning\New JukeBox\jukebox\jukebox\jukebox
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Genre/Index.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Genre/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Genre/Privacy.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Genre/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/PlayList/AddToPlayList.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/PlayList/AddToPlayList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheUxpc3RcQWRkVG9QbGF5TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/PlayList/EditPlayListView.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/PlayList/EditPlayListView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheUxpc3RcRWRpdFBsYXlMaXN0Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/PlayList/MyPlayList.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/PlayList/MyPlayList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheUxpc3RcTXlQbGF5TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/PlayList/PlaylistPage.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/PlayList/PlaylistPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheUxpc3RcUGxheWxpc3RQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Shared/Error.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/SongsDetails/Index.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/SongsDetails/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NEZXRhaWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Songs/AddToPlayListView.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Songs/AddToPlayListView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NcQWRkVG9QbGF5TGlzdFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Songs/Index.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Songs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/_ViewImports.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/_ViewStart.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kathi/Desktop/learning/jukebox/jukebox/jukebox/jukebox/Views/Shared/_Layout.cshtml]
+[C:/Users/kathi/Desktop/learning/New JukeBox/jukebox/jukebox/jukebox/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rjb9z2hqy8

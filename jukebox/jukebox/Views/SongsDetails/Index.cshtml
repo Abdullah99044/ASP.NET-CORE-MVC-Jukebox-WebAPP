@@ -5,13 +5,48 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Song details</h1>
+<div class="Song-Details-Title"> <i class="bi bi-file-earmark-music-fill"></i>  Song details : </div>
 
-@foreach(var obj in Model)
-{
-    <h2> Name   : @obj.Name   </h2>
-    <h2> Length : @obj.Length </h2>
-    <h2> Artist : @obj.Artist </h2>
-    <h2> Genre  : @obj.Genres.Name </h2>
-}
 
+<div class="Table-Conatiner-flex">
+
+    <div class="Table-Conatiner">
+
+        @foreach(var obj in Model)
+        {
+            <table style="width:100%">
+
+                 <tr>
+
+                    <th> Name </th>
+
+                    <th> <i class="bi bi-stopwatch-fill"></i> Length </th>
+
+                    <th> <i class="bi bi-mic"></i>  Artist </th>
+
+                    <th> <i class="bi bi-music-note-beamed"></i> Genre </th>
+
+                </tr>
+
+                 <tr>
+
+                    <td> @obj.Name  </td>
+
+                    <td>   @obj.Length  </td>
+
+                    <td> @obj.Artist </td>
+
+                    <td> @obj.Genres.Name </td>
+
+
+                 </tr>
+ 
+
+             </table>
+            
+        }
+
+    </div>
+
+
+</div>

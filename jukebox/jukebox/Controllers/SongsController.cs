@@ -26,6 +26,8 @@ namespace jukebox.Controllers
                 return NotFound();
             }
 
+            
+
             IEnumerable<Songs> songsGenre = _db.Songs.Where(s => s.Genres.Id == id).ToList();
 
             if (songsGenre == null)
@@ -40,37 +42,62 @@ namespace jukebox.Controllers
 
         //Add songs to a play list
 
+        
 
         public class AddToPlayListModels
         {
             public int Id { get; set; }
 
+            public string Name { get; set; }
+
             public Saved_Songs Saved { get; set; }
 
             public IEnumerable<PlayLists> playLists { get; set; }
+
+           
         }
 
         [HttpGet]
-        public IActionResult AddToPlayListView(int id)
+        public IActionResult AddToPlayListView(int id , string name)
         {
             if (User.Identity.IsAuthenticated) {
 
                 string UserID = User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
-                IEnumerable<PlayLists> UserPlayLists = _db.PlayLists.Where(s => s.UserId == UserID).ToList();
 
-                var model = new AddToPlayListModels
+                bool userHasSongs = _db.PlayLists.Any(s => s.UserId == UserID);
+
+
+                if (userHasSongs)
                 {
-                    Id = id ,
+                    IEnumerable<PlayLists> UserPlayLists = _db.PlayLists.Where(s => s.UserId == UserID).ToList();
 
-                    Saved = new Saved_Songs(),
+                    var model = new AddToPlayListModels
+                    {
+                        Id = id,
 
-                    playLists = UserPlayLists
+                        Name = name,
+
+                        Saved = new Saved_Songs(),
+
+                        playLists = UserPlayLists
 
 
-                };
+                    };
 
-                return View(model);
+                    return View(model);
+
+                }
+
+                else
+                {
+
+
+                    TempData["NoPlayList"] = "You dont have any Play lists , so please make a play list ";
+                    return View();
+                }
+
+                
 
             }
 
@@ -86,7 +113,7 @@ namespace jukebox.Controllers
             _db.Saved_Songs.Add(obj.Saved);
             _db.SaveChanges();
 
-            return RedirectToAction("Index" , "Home");
+            return RedirectToAction("Index" , "Genre");
         }
     }
 }

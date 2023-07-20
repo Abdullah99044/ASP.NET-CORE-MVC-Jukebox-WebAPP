@@ -162,68 +162,35 @@ namespace jukebox.Data
 
                 //Playlists
 
-                if (!db.PlayLists.Any())
-                {
+               // if (!db.PlayLists.Any())
+               // {
 
-                    db.PlayLists.AddRange(new List<PlayLists>()
-                    {
-                        new PlayLists()
-                        {
-                            Name = "Rap playlist",
-                            UserId = "fa970c7f-7425-4bba-96bc-5502113f858b" 
+                   // db.PlayLists.AddRange(new List<PlayLists>()
+                  //  {
+                         
 
-                        },
+                 //   });
 
-                        new PlayLists()
-                        {
+                 //   db.SaveChanges();
 
-                            Name = "Lofi playlist",
-                            UserId = "fa970c7f-7425-4bba-96bc-5502113f858b"
-
-                        }
-
-                    });
-
-                    db.SaveChanges();
-
-                }
+                //}
 
                 //Saved songs
 
-                if (!db.Saved_Songs.Any())
-                {
+                //if (!db.Saved_Songs.Any())
+                //{
 
-                    db.Saved_Songs.AddRange(new List<Saved_Songs>()
-                    {
-                        new Saved_Songs()
-                        {
-                            SongsId = 1 ,
-                            PlaylistId = 7  
-
-                        },
-
-                        new Saved_Songs()
-                        {
-
-                            SongsId = 2 ,
-                            PlaylistId = 7
-
-                        },
-
-                        new Saved_Songs()
-                        {
-                             SongsId = 3 ,
-                            PlaylistId = 7
-
-                        },
+                  //  db.Saved_Songs.AddRange(new List<Saved_Songs>()
+                   // {
+                        
 
                         
 
-                    });
+                   // });
 
-                    db.SaveChanges();
+                  //  db.SaveChanges();
 
-                }
+                //}
  
             }
 

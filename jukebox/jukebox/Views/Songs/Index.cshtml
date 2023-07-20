@@ -1,4 +1,7 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity;
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 
 @model IEnumerable<Songs>
@@ -9,12 +12,38 @@
 }
 
  
+<div class="Songs-Container">
 
-@foreach(var obj in Model)
-{
-    <a asp-controller="SongsDetails" asp-action="index" asp-route-id="@obj.Id" >@obj.Name</a>
-    <a asp-controller="Songs" asp-action="AddToPlayListView" asp-route-id="@obj.Id">Add to your playlist</a>
-    <br />
-}
+    @foreach(var obj in Model)
+    {
 
- 
+        <div class="Songs-container-Grid">
+
+            <div class="Song-Name">
+                <a asp-controller="SongsDetails" asp-action="index" asp-route-id="@obj.Id"><i class="bi bi-file-earmark-music-fill"></i> 
+                    @obj.Name</a>
+            </div>
+        
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <div class="Add-Songs-Page">
+                        <a asp-controller="Songs" asp-action="AddToPlayListView" asp-route-id="@obj.Id" asp-route-name="@obj.Name">
+                            <i class="bi bi-plus-circle"></i> Add to your playlist
+                        </a>
+                    </div>
+                }
+                
+                else{
+
+               
+                <div class="Add-Songs-Page">
+                <a asp-area="Identity" asp-page="/Account/Login"><i class="bi bi-box-arrow-right"></i> Login to Add this song</a>
+                </div>
+
+                }
+
+        
+        </div>
+    }
+
+</div>

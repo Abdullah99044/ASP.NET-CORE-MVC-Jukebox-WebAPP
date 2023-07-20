@@ -1,0 +1,183 @@
+
+
+
+.Songs-Container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 80px;
+    
+     
+    
+}
+
+.Songs-container-Grid{
+
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-column-gap: 40px;
+    
+    background-color: rgb(154, 44, 44);
+    padding: 10px 40px;
+    margin-bottom: 80px;
+    border-radius: 40px;
+
+    transition: background-color 0.25s , box-shadow 0.25s ;
+
+    
+    
+ 
+}
+
+.Songs-container-Grid:hover {
+    background-color: rgb(188, 61, 61);
+    box-shadow: 1px 1px 5px rgb(132, 38, 38);
+}
+
+
+.Song-Name , .Add-Songs-Page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    
+ 
+
+}
+
+.Song-Name a , .Add-Songs-Page a {
+
+    text-decoration: none;
+}
+
+.Song-Name a {
+    color: white;
+    transition : font-size 0.3s;
+     
+}
+
+
+ 
+ 
+
+.Add-Songs-Page a {
+    color: rgb(154, 44, 44);
+    transition : font-size 0.3s;
+    
+}
+
+.Song-Name {
+
+    
+    height: 50px;
+    padding: 10px;
+    
+}
+
+.Song-Name:hover a{
+    font-size: 25px;
+    transition : font-size 0.3s;
+}
+
+.Add-Songs-Page {
+
+    background-color: rgb(231, 230, 230);
+    
+    border-radius: 20px;
+    padding: 2px 10px;
+    transition : background-color 0.3s   ;
+    
+}
+
+.Add-Songs-Page:hover a  {
+
+    font-size: 25px;
+    padding: 2px 30px;
+
+    
+     
+}
+
+.Add-Songs-Page:hover   {
+
+    background-color: white;
+ 
+    
+     
+}
+
+ 
+
+@media ( max-width: 900px){
+
+    .Songs-container-Grid{ 
+
+        width: 90%;
+        grid-template-columns: 1fr;
+        
+        
+    }
+
+    
+
+    .Song-Name{
+        margin-bottom: 10px;
+    }
+
+    .Add-Songs-Page   {
+
+        margin-bottom: 15px;
+        height: 50px;
+    }
+}
+
+@media ( max-width: 580px){
+
+
+    
+    .Add-Songs-Page  ,  .Song-Name {
+        font-size: 19px;
+         
+    }
+
+
+    .Add-Songs-Page:hover a , .Song-Name:hover a {
+
+        font-size: 22px;
+        
+       
+    }
+
+    
+
+    
+}
+
+
+@media ( max-width: 580px){
+
+
+    
+    .Add-Songs-Page  ,  .Song-Name {
+        font-size: 16px;
+         
+    }
+
+
+    .Add-Songs-Page:hover a , .Song-Name:hover a {
+
+        font-size: 18px;
+        
+       
+    }
+
+    
+
+    
+}

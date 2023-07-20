@@ -7,36 +7,87 @@
 @{
     ViewData["Title"] = "AddToPlayListView";
 
-    var id = Model.Id;
+ 
+}
+
+
+//You will Find The style of this page in SongDetails.css
+
+ 
+@if ( TempData["NoPlayList"] != null)
+{
+    <div class="NoPlaylist-FlexBox"> 
+
+        <div class="NoPlayList-Container">
+
+            <div class="TempData">
+
+                @TempData["NoPlayList"] :
+
+            </div>
+
+            <div class="MakePlaylist-Link">
+
+                <a asp-controller="PlayList" asp-action="AddToPlayList"> Make play list</a>
+
+            </div>
+
+        </div>
+
+    </div>
+}
+
+else
+{
+
+   <div class="Add-To-Playlist-flexBox">
+
+       <div class="Add-To-PlayList-Container">
+
+
+            <div class="Add-Song-Name">
+
+                <i class="bi bi-file-earmark-music-fill"></i> @Model.Name  
+
+            </div>
+
+            <div class="Add-Song-Form">
+
+                <form asp-controller="Songs" asp-action="AddToPlayList">
+
+                <label > Chose your PlayList  </label>
+
+                <select asp-for="Saved.PlaylistId">
+
+                        @foreach (var obj in Model.playLists)
+                        {
+                             
+                            <option value="@obj.Id"> @obj.Name</option>
+
+                        }
+
+
+                    </select>
+
+
+                    <input type="hidden" asp-for="Saved.SongsId" value="@Model.Id" />
+
+
+
+
+                    <input type="submit" value="Add" />
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 }
 
-<h1>@id</h1>
 
-
-
-<form asp-controller="Songs" asp-action="AddToPlayList">
-
- 
-    <select asp-for="Saved.PlaylistId">
-
-        @foreach (var obj in Model.playLists)
-        {
-
-            <option value="@obj.Id"> @obj.Name</option>
-
-        }
-
-
-    </select>
     
-
-    <input type="hidden" asp-for="Saved.SongsId" value="@Model.Id" />
-
- 
-
-   
-    <input type="submit" value="Add" />
-
-</form>
 

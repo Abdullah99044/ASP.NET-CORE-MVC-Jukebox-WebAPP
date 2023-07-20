@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\jukebox.csproj": {}
+    "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\jukebox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\jukebox.csproj": {
+    "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\jukebox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\jukebox.csproj",
+        "projectUniqueName": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\jukebox.csproj",
         "projectName": "jukebox",
-        "projectPath": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\jukebox.csproj",
+        "projectPath": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\jukebox.csproj",
         "packagesPath": "C:\\Users\\kathi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kathi\\Desktop\\learning\\jukebox\\jukebox\\jukebox\\jukebox\\obj\\",
+        "outputPath": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
