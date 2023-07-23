@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7zC6szyMEBysaUrfbrUs71nHBzHqBx///GjWbZzVTzU=",
+  "Hash": "8wfd/rAda4VeDWe1KivyuUxCS5D9SUdZZlnJz9MzHXk=",
   "Source": "jukebox",
   "BasePath": "_content/jukebox",
   "Mode": "Default",
@@ -1122,6 +1122,40 @@
       "OriginalItemSpec": "wwwroot\\css\\Gnere.css"
     },
     {
+      "Identity": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\MakeEditPlaylists.css",
+      "SourceId": "jukebox",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\",
+      "BasePath": "_content/jukebox",
+      "RelativePath": "css/MakeEditPlaylists.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MakeEditPlaylists.css"
+    },
+    {
+      "Identity": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\MyPlayList.css",
+      "SourceId": "jukebox",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\",
+      "BasePath": "_content/jukebox",
+      "RelativePath": "css/MyPlayList.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MyPlayList.css"
+    },
+    {
       "Identity": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\nav.css",
       "SourceId": "jukebox",
       "SourceType": "Discovered",
@@ -1137,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\nav.css"
+    },
+    {
+      "Identity": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\PlayListPage.css",
+      "SourceId": "jukebox",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\",
+      "BasePath": "_content/jukebox",
+      "RelativePath": "css/PlayListPage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PlayListPage.css"
     },
     {
       "Identity": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\site.css",

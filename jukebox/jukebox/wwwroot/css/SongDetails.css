@@ -13,22 +13,27 @@
 
 .Table-Conatiner{
 
-    flex: 1;
+    
     color: white;
 
-    
+    flex: 1;
 
      
 }
 
 .Table-Conatiner table{
-
+    
     background-color: rgb(154, 44, 44);
    
-    height: 90px;
+     
     border-radius: 20px;
     box-shadow: 5px 5px 10px gray;
 
+   height: 170px;
+
+    
+
+    
     
 }
 
@@ -38,6 +43,10 @@
     font-weight: bold;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+
+    margin-bottom: 10px;
+
+   
 }
 
 
@@ -46,9 +55,15 @@
 
      
     padding-left: 23px;
+    margin-bottom: 5px;
    
      
 }
+ 
+
+ 
+
+
 
 .Song-Details-Title{
 
@@ -67,9 +82,124 @@
 }
 
 
+/* This class belong to playlist page  */
+
+.Delete-Coloumn{
+
+    text-align: center
+ 
+ }
+ 
+ 
+ .Delete-Coloumn input{
+ 
+    
+     margin-top: 5px;
+     
+     width: 90px;
+     height: 30px;
+     font-size: 15px;
+     border-radius: 15px;
+     
+      
+ 
+     border: none;
+ 
+     background-color:  rgb(235, 15, 15);
+ 
+     color: white;
+ 
+ 
+     margin-bottom: 5px;
+      
+ }
+ 
+ .Delete-Coloumn input:hover {
+ 
+     background-color:  rgb(253, 75, 75);
+ 
+     
+ 
+ }
+
+ .totalLength {
+
+    width: 410px;
+
+    font-size: 25px;
+
+    background-color: rgb(154, 44, 44);
+    color: white;
+
+    text-align: center;
+    border-radius: 30px;
+    
+    box-shadow: 5px 5px 10px gray;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    padding: 20px 20px;
+
+ }
 
 
-/* These styles belings to Add to play list page */
+ 
+ /*           */
+ 
+
+@media (max-width : 500px){
+
+    .Song-Details-Title{
+        
+
+        font-size: 30px;
+    }
+
+    .Table-Conatiner table {
+
+
+        font-size: 12px;
+       
+
+         height: 160px;
+
+         
+    }
+
+    .Table-Conatiner table tr {
+
+
+        font-size: 12px;
+       
+
+         
+
+    }
+
+    
+    
+
+    .Delete-Coloumn input {
+
+        width: 50px;
+        height: 18px;
+
+        font-size: 10px;
+
+        margin-right: 5px;
+        margin-bottom: 3px;
+       
+    }
+
+    .totalLength {
+
+        font-size: 20px;
+}
+
+
+
+/* These styles belongs to Add to play list page */
 
 .NoPlaylist-FlexBox{
 
@@ -303,3 +433,5 @@
     
     }
 }   
+
+}

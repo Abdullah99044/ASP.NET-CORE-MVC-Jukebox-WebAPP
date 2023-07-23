@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\css\\Gnere.css"
     },
     {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\MakeEditPlaylists.css",
+      "PackagePath": "staticwebassets\\css\\MakeEditPlaylists.css"
+    },
+    {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\MyPlayList.css",
+      "PackagePath": "staticwebassets\\css\\MyPlayList.css"
+    },
+    {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\PlayListPage.css",
+      "PackagePath": "staticwebassets\\css\\PlayListPage.css"
+    },
+    {
       "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\SongDetails.css",
       "PackagePath": "staticwebassets\\css\\SongDetails.css"
     },

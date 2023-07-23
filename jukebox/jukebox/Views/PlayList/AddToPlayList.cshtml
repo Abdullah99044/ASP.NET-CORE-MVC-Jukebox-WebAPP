@@ -5,16 +5,36 @@
 
 
  
-
-<h1> Make a new playlist </h1>
-
-<form method="post" >
-
-    <input type="hidden" asp-for="PlayLists.UserId" value="@Model.userid" />
-
-    <input type="text" asp-for="PlayLists.Name" placeholder="Your playlist name" />
-
-    <input type="submit" value="Create" />
+ 
 
 
-</form>
+<div class="Edit-Make-PlayList-FlexBox" >
+
+    <div class="Edit-Make-PlayList-Container" >
+
+        <div class="Edit-Make-PlayList-Title"> <i class="bi bi-folder-plus"></i>  Make a new playlist   </div>
+
+        <form method="post" >
+
+            <input type="hidden" asp-for="PlayLists.UserId" value="@Model.userid" />
+
+
+            <div class="Edit-Make-PlayList-PlayList-Name" >
+
+                <input type="text" asp-for="PlayLists.Name" placeholder="Your playlist name" />
+
+            </div>
+
+            <div class="Edit-Make-PlayList-Submit" >
+
+                <div   >
+
+                    <input lass="Edit-Make-PlayList-Submit"  type="submit" value="Create" />
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+</div>

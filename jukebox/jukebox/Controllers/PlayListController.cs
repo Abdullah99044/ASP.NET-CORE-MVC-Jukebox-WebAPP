@@ -159,7 +159,7 @@ namespace jukebox.Controllers
         public IActionResult PlaylistPage(int id , string name)
         {
 
-            IEnumerable<Saved_Songs> Saved_songs = _db.Saved_Songs.Include(s => s.Songs).Where(s => s.PlaylistId == id).ToList();
+            IEnumerable<Saved_Songs> Saved_songs = _db.Saved_Songs.Include(s => s.Songs.Genres ).Where(s => s.PlaylistId == id).ToList();
 
             var model = new models_for_playlistPage
             {

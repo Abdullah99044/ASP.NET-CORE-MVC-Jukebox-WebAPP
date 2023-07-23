@@ -5,16 +5,41 @@
     ViewData["Title"] = "EditPlayList";
 }
 
-<h1>EditPlayList</h1>
+ 
 
 
-<form method="post" asp-controller="PlayList" asp-action="EditPlayList">
 
-    <input type="text" asp-for="Name" placeholder="Name" />
-    <input type="hidden" asp-for="Id" />
-    <input type="hidden" asp-for="UserId" />
-    <input type="submit" value="Edit" />
+<div class="Edit-Make-PlayList-FlexBox">
 
+    <div class="Edit-Make-PlayList-Container">
 
-</form>
+        <div class="Edit-Make-PlayList-Title">  <i class="bi bi-pencil-square"></i> Edit your Playlist 
+            
+        </div>
+
+        <form method="post" asp-controller="PlayList" asp-action="EditPlayList">
+
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="UserId" />
+
+            <div class="Edit-Make-PlayList-PlayList-Name">
+
+                <input type="text" asp-for="Name" placeholder="Name" />
+
+            </div>
+
+            
+
+            <div class="Edit-Make-PlayList-Submit">
+
+                <div> 
+                    <input class="Edit-Make-PlayList-Submit" type="submit" value="Edit" />
+                 </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
 

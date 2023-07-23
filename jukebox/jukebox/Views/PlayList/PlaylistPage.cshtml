@@ -10,43 +10,109 @@
     string name = Model.name;
 
     TimeSpan tottalTime = TimeSpan.Zero;
+
+
+    //For this page style , I have used the style of SongDetails.css
+     
 }
 
 
 
+<div class="Song-Details-Title"> <i class="bi bi-music-note-list"></i>  Playlist name : @name </div>
  
 
 
  
+
+<div class="Table-Conatiner-flex">
+
+    <div class="Table-Conatiner">
+        <table class="t11" style="width:100%">
+
+        <tr>
+
+            <th>Name</th>
+
+            <th> <i class="bi bi-stopwatch-fill"></i>  Length</th>
+
+            <th> <i class="bi bi-mic"></i> Artist</th>
+
+            <th> <i class="bi bi-music-note-beamed"></i> Genre</th>
+
+            <th class="Delete-Coloumn" >  <i class="bi bi-trash"></i>  </th>
+
+        </tr>
 
 @foreach(var obj in Model.Saved)
+
+
 {
-    @obj.Songs.Name
+
+        <tr  >
+    
+                <td>
+
+                    @obj.Songs.Name
+                    
+                </td>
+
+                <td>
+
+                    @obj.Songs.Length
+
+                </td>
+
+                <td>
+
+                    @obj.Songs.Artist
+
+                </td>
+
+                <td>
+
+                    @obj.Songs.Genres.Name
+
+                </td>
+
+       
+
+ 
+
+                <form method="post" asp-controller="PlayList" asp-action="DeleteFromPlaylist" asp-route-id="@obj.Id" asp-route-name="@name" asp-route-playlistid="@Id">
+
+                <td class="Delete-Coloumn">
+
+                    
+
+                    <input type="submit" value=" Delete">
+
+                </td>
+
+                </form>
+
+            </tr>
 
     {
 
-        
+
 
         tottalTime += obj.Songs.Length;
     }
 
-
-
-
-
-
-    <form method="post" asp-controller="PlayList" asp-action="DeleteFromPlaylist" asp-route-id="@obj.Id" asp-route-name="@name" asp-route-playlistid="@Id">
-
- 
-
-        <input type="submit" value="Delete">
-
-    </form>
-
     
-    <br />
+     
 
 }
 
 
-<h2> Tottal play list length =  @tottalTime </h2>
+    
+
+    </table>
+
+
+        
+    </div>
+</div>
+
+
+<div class="totalLength"> <i class="bi bi-clock-fill"></i>  Tottal playlist length :  @tottalTime   </div>
