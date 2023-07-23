@@ -272,6 +272,44 @@ namespace jukebox.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("PlayLists");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 40,
+                            Name = "Lofi",
+                            UserId = "bd1d889c-0482-4a8c-ac22-dfa0769f95a8"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Name = "Rap",
+                            UserId = "bd1d889c-0482-4a8c-ac22-dfa0769f95a8"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Name = "Lofi",
+                            UserId = "aa164a31-0ce0-47f3-945d-577a9625affb"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Name = "Rap",
+                            UserId = "aa164a31-0ce0-47f3-945d-577a9625affb"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Name = "Lofi",
+                            UserId = "fa970c7f-7425-4bba-96bc-5502113f858b"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Name = "Rap",
+                            UserId = "fa970c7f-7425-4bba-96bc-5502113f858b"
+                        });
                 });
 
             modelBuilder.Entity("jukebox.Models.Saved_Songs", b =>
@@ -295,6 +333,44 @@ namespace jukebox.Migrations
                     b.HasIndex("SongsId");
 
                     b.ToTable("Saved_Songs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 100,
+                            PlaylistId = 21,
+                            SongsId = 2
+                        },
+                        new
+                        {
+                            Id = 101,
+                            PlaylistId = 21,
+                            SongsId = 2
+                        },
+                        new
+                        {
+                            Id = 102,
+                            PlaylistId = 31,
+                            SongsId = 3
+                        },
+                        new
+                        {
+                            Id = 103,
+                            PlaylistId = 31,
+                            SongsId = 4
+                        },
+                        new
+                        {
+                            Id = 104,
+                            PlaylistId = 31,
+                            SongsId = 5
+                        },
+                        new
+                        {
+                            Id = 105,
+                            PlaylistId = 31,
+                            SongsId = 6
+                        });
                 });
 
             modelBuilder.Entity("jukebox.Models.Songs", b =>
@@ -326,6 +402,80 @@ namespace jukebox.Migrations
                     b.HasIndex("GenresId");
 
                     b.ToTable("Songs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 7,
+                            Artist = "Michael Jackson",
+                            GenresId = 3,
+                            Length = new TimeSpan(0, 0, 5, 0, 0),
+                            Name = "Thriller"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Artist = " A-ha",
+                            GenresId = 3,
+                            Length = new TimeSpan(0, 0, 4, 30, 0),
+                            Name = "Take On Me"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Artist = "Michael Jackson",
+                            GenresId = 3,
+                            Length = new TimeSpan(0, 0, 4, 48, 0),
+                            Name = "Beat It"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Artist = "Eagles ",
+                            GenresId = 4,
+                            Length = new TimeSpan(0, 0, 6, 0, 0),
+                            Name = "Hotel California"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Artist = "Otis redding",
+                            GenresId = 4,
+                            Length = new TimeSpan(0, 0, 2, 10, 0),
+                            Name = "Respect"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Artist = "Freddie perren",
+                            GenresId = 4,
+                            Length = new TimeSpan(0, 0, 3, 13, 0),
+                            Name = "I will survive"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Artist = "Johnny Cash",
+                            GenresId = 5,
+                            Length = new TimeSpan(0, 0, 4, 0, 0),
+                            Name = "I Walk the Line"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Artist = "Dolly Parton",
+                            GenresId = 5,
+                            Length = new TimeSpan(0, 0, 3, 35, 0),
+                            Name = "Jolene"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Artist = "Garth Brooks",
+                            GenresId = 5,
+                            Length = new TimeSpan(0, 0, 5, 0, 0),
+                            Name = "Friends in Low Places"
+                        });
                 });
 
             modelBuilder.Entity("jukebox.Models.ApplicationUser", b =>

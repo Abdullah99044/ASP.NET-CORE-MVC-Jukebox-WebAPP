@@ -1,7 +1,9 @@
-﻿using jukebox.Models;
+﻿ 
+using jukebox.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Diagnostics.Metrics;
 
 namespace jukebox.Data
 {
@@ -150,54 +152,14 @@ namespace jukebox.Data
 
                         }
 
+
                     });
+
+
                     db.SaveChanges();
 
 
-
-
-                }
-
- 
-
-                //Playlists
-
-               // if (!db.PlayLists.Any())
-               // {
-
-                   // db.PlayLists.AddRange(new List<PlayLists>()
-                  //  {
-                         
-
-                 //   });
-
-                 //   db.SaveChanges();
-
-                //}
-
-                //Saved songs
-
-                //if (!db.Saved_Songs.Any())
-                //{
-
-                  //  db.Saved_Songs.AddRange(new List<Saved_Songs>()
-                   // {
-                        
-
-                        
-
-                   // });
-
-                  //  db.SaveChanges();
-
-                //}
- 
-            }
-
+            }   }
         }
-
-           
     }
-
-    
 }

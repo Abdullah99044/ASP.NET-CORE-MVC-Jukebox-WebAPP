@@ -1,26 +1,33 @@
 
 
-.MyPlayList-Page-FlexBox{
-    
-    display: flex;
-     
 
-    flex-direction: column;
+.MyPlayList-Page-FlexBox  , .MyPlayList-PlayList-Container , .MyPlayList-PageHeader-Container
+, .PlayList-Page , .Delete-PlayList , .Edit-PlayList
+
+{
+
+
+    display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.MyPlayList-Page-FlexBox{
+   
+
+    flex-direction: column;
+    
     margin-top: 80px;
 
 }
 
 .MyPlayList-PlayList-Container , .MyPlayList-PageHeader-Container {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     
     width: 700px;
     background-color: rgb(154, 44, 44);
-     box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px gray;
     
 
 }
@@ -90,9 +97,7 @@
 }
 
 
-
-
-
+ 
 
 .MyPlayList-PlayList-Container{
 
@@ -104,16 +109,8 @@
     flex-direction: row;
 }
 
+  
  
-
-.PlayList-Page , .Delete-PlayList , .Edit-PlayList{
-    
-     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .PlayList-Page a ,     .Edit-PlayList a {
 
     text-decoration: none;

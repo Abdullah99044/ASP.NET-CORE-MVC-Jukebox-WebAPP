@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\jukebox.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\AddSongToPlaylist.css",
+      "PackagePath": "staticwebassets\\css\\AddSongToPlaylist.css"
+    },
+    {
       "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\Gnere.css",
       "PackagePath": "staticwebassets\\css\\Gnere.css"
     },
@@ -15,10 +19,6 @@
     {
       "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\MyPlayList.css",
       "PackagePath": "staticwebassets\\css\\MyPlayList.css"
-    },
-    {
-      "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\PlayListPage.css",
-      "PackagePath": "staticwebassets\\css\\PlayListPage.css"
     },
     {
       "Id": "C:\\Users\\kathi\\Desktop\\learning\\New JukeBox\\jukebox\\jukebox\\jukebox\\wwwroot\\css\\SongDetails.css",

@@ -1,7 +1,7 @@
 
 
 
-.Table-Conatiner-flex{
+.Table-Conatiner-flex {
 
 
     margin-top: 60px;
@@ -11,7 +11,7 @@
 }
 
 
-.Table-Conatiner{
+.Table-Conatiner {
 
     
     color: white;
@@ -21,7 +21,7 @@
      
 }
 
-.Table-Conatiner table{
+.Table-Conatiner table {
     
     background-color: rgb(154, 44, 44);
    
@@ -29,15 +29,12 @@
     border-radius: 20px;
     box-shadow: 5px 5px 10px gray;
 
-   height: 170px;
-
-    
-
-    
+     
+   
     
 }
 
-.Table-Conatiner th{
+.Table-Conatiner th {
 
     padding-left: 20px;
     font-weight: bold;
@@ -84,14 +81,14 @@
 
 /* This class belong to playlist page  */
 
-.Delete-Coloumn{
+.Delete-Coloumn {
 
     text-align: center
  
  }
  
  
- .Delete-Coloumn input{
+ .Delete-Coloumn input {
  
     
      margin-top: 5px;
@@ -195,243 +192,8 @@
     .totalLength {
 
         font-size: 20px;
-}
-
-
-
-/* These styles belongs to Add to play list page */
-
-.NoPlaylist-FlexBox{
-
-    
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-
-    
-}
-
-.NoPlayList-Container{
-
-    width: 700px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    background-color: rgb(154, 44, 44);
-    border-radius: 40px;
-    box-shadow: 5px 5px 10px gray;
-
-    padding : 10px 20px;
-
-    
-
-}
-
-.TempData{
-
-    
-    
-    color: white;
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    flex: 2;
-
-    
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.MakePlaylist-Link{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgb(217, 214, 214);
-    width: 200px;
-    height: 50px;
-     
-    border-radius: 20px;
-    transition: background-color 0.3s;
-
-    margin-bottom: 10px;
-}
-
-.MakePlaylist-Link a{
-    text-decoration: none;
-    color: rgb(154, 44, 44);
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: font-size 0.3s;
-}
-
-
-.MakePlaylist-Link:hover {
-    background-color: rgb(255, 255, 255);
-
-    
-}
-
-.MakePlaylist-Link:hover a{
-
-    font-size: 25px;
-}
-
-
-@media (max-width: 700px){
-
-    .TempData{
-
-        font-size: 18px;
-        text-align: center;
-         
-    }
-
-    .MakePlaylist-Link a{
-
-        font-size: 15px;
-
-    }
-
-    .MakePlaylist-Link:hover a{
-
-        font-size: 18px;
     }
 }
+
 
  
-
-.Add-To-Playlist-flexBox{
-
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-     
-}
-
-.Add-To-PlayList-Container{
-
-    width: 600px;
-    height: 150px;
-     
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    background-color: rgb(154, 44, 44);
-    border-radius: 50px;
-    box-shadow: 5px 5px 10px gray;
-
-}
-
-
-.Add-Song-Name{
-
-    color: white;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.Add-Song-Form{
-
-    margin-top: 10PX;
-    margin-bottom: 10PX;
-     
-    width: 500px;
-    text-align: center;
-
-}
-
-
-.Add-Song-Form label{
-
-    
-
-    font-size: 20px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 10px;
-}
-
-.Add-Song-Form select{
-
-    width: 150px;
-    margin: 0px;
-    height: 28px;
-
-}
-
-.Add-Song-Form input {
-
-    width: 100px;
-    margin: 0px;
-    height: 30px;
-
-    color: rgb(154, 44, 44);
-    background-color:rgb(220, 220, 220);
-    border-radius: 10px;
-
-    border-width: 0px;
-
-    font-weight: bold;
-
-    font-size: 15px;
-
-    transition: background-color 0.3s , width 0.3s;
-}
-
-.Add-Song-Form  input:hover{
-
-    background-color: white;
-    width: 120px;
-
-}
-
-@media (max-width: 500px){
-
-
-    .Add-Song-Form{
-
-        width: 400px;
-    }
-
-    .Add-Song-Name{
-
-        font-size: 30px;
-    }
-
-    .Add-Song-Form label , .Add-Song-Form select{
-
-        font-size: 15px;
-    }
-
-    .Add-Song-Form select{
-
-        width: 120px;
-    }
-
-    .Add-Song-Form input{
-
-        font-size: 12px;
-        width: 90px;
-
-    }
-
-    .Add-Song-Form  input:hover{
-
-        background-color: white;
-        width: 100px;
-    
-    }
-}   
-
-}

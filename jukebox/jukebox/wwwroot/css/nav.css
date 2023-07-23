@@ -13,9 +13,13 @@ nav {
     border-bottom-style: solid;
     border-bottom-color: gray;
     border-bottom-width: 1px;
+ 
+}
 
-    
-    
+
+.leftSection , .RigthSection , .DriopContent {
+
+    display: flex;
 
 }
 
@@ -23,8 +27,7 @@ nav {
 
     width: 200px;
 
-    display: flex;
-
+    
     justify-content: center;
 }
 
@@ -47,7 +50,7 @@ nav {
 .RigthSection {
      
     flex: 1;
-    display: flex;
+    
     flex-direction: row-reverse;
 
    
@@ -58,14 +61,7 @@ nav {
     display: none;
 }
 
-
-.DriopContent{
-
-    display: flex;
  
-    
-}
-
 .List{
 
     flex: 1;
